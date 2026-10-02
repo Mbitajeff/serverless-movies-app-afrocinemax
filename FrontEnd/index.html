@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="AfroCinemax - Discover movies, explore what's showing, and find your next cinema experience."
+    >
+    <title>AfroCinemax | Discover What's Showing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="brand" aria-label="AfroCinemax home">
+                <span class="brand-mark">A</span>
+                <span class="brand-name">Afro<span>Cinemax</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#discover">Discover</a>
+                <a href="#movies">Movies</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="discover">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">African stories. Global cinema.</p>
+
+                <h1>
+                    Your next great movie
+                    <span>starts here.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover what's showing, search for your favourite films,
+                    and explore movie details in one place.
+                </p>
+
+                <div class="search-panel">
+                    <label for="movie-id-input" class="sr-only">
+                        Search for a movie
+                    </label>
+
+                    <div class="search-box">
+                        <input
+                            type="text"
+                            id="movie-id-input"
+                            placeholder="Search by movie title..."
+                            autocomplete="off"
+                        >
+                        <button id="search-btn" type="button">
+                            Search Movie
+                        </button>
+                    </div>
+
+                    <p class="search-hint">
+                        Try searching for Spider-Man, Inception or The Matrix.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="available-section" id="movies">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Now Showing</p>
+                    <h2>Movies available to watch</h2>
+                </div>
+
+                <span class="live-indicator">
+                    <span class="live-dot"></span>
+                    Live availability
+                </span>
+            </div>
+
+            <div class="available-movies-card">
+                <p id="available-movies">
+                    Loading available movies...
+                </p>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Movie Finder</p>
+                    <h2>Search results</h2>
+                </div>
+            </div>
+
+            <div id="search-status" class="search-status">
+                Search for a movie above to view its details.
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Movie</th>
+                            <th>Year</th>
+                            <th>Showtime</th>
+                            <th>Rating</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-card">
+                <p class="section-label">About AfroCinemax</p>
+
+                <h2>Cinema discovery built for a connected audience.</h2>
+
+                <p>
+                    AfroCinemax brings movie availability and cinema information
+                    together through a fast, simple and cloud-powered experience.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature">
+                        <span class="feature-number">01</span>
+                        <h3>Discover</h3>
+                        <p>See which movies are currently available.</p>
+                    </div>
+
+                    <div class="feature">
+                        <span class="feature-number">02</span>
+                        <h3>Search</h3>
+                        <p>Find specific movies instantly by title.</p>
+                    </div>
+
+                    <div class="feature">
+                        <span class="feature-number">03</span>
+                        <h3>Explore</h3>
+                        <p>View ratings, release years, showtimes and descriptions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="brand footer-brand">
+                <span class="brand-mark">A</span>
+                <span class="brand-name">Afro<span>Cinemax</span></span>
+            </a>
+
+            <p>
+                African stories. Global cinema.
+            </p>
+
+            <p class="copyright">
+                &copy; <span id="current-year"></span> AfroCinemax.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
